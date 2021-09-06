@@ -136,7 +136,7 @@ body {
   background: #1fc58e;
   font-family: "Open Sans";
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
 }
 .header {
   display: flex;
@@ -146,9 +146,17 @@ body {
   margin: 1.6rem;
 }
 .todo-form {
+  box-sizing: border-box;
+  width: 100%;
+}
+form {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+}
+.form-options {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 90%;
 }
 .item.completed {
   text-decoration: line-through;
