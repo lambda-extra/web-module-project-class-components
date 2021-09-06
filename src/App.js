@@ -64,16 +64,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <Grid
-        container
-        direction="column"
-        justifyContent="flex-start"
-        alignItems="center"
-      >
+      <div>
         <Header />
         <TodoForm handleAdd={this.handleAdd} handleClear={this.handleClear} />
         <TodoList todo={this.state.todo} handleToggleComplete={this.handleToggleComplete} />
-      </Grid>
+      </div>
     );
   }
 }
