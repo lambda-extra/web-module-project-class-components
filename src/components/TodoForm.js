@@ -1,4 +1,5 @@
 import React from 'react';
+import { TextField } from '@material-ui/core';
 
 class TodoForm extends React.Component {
     state = {
@@ -26,7 +27,7 @@ class TodoForm extends React.Component {
             <div className="todo-form">
                 <form>
                     <div className="form-input">
-                        <input type="text" name="todo" placeholder="Enter task..." onChange={this.handleChanges} />
+                        <TextField id="outlined-basic" label="Enter task..." variant="outlined" size="small" onChange={this.handleChanges} />
                     </div>
                     <div className="form-buttons">
                         <button onClick={this.handleAddClick}>Add</button>
