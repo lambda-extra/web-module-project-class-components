@@ -15,7 +15,7 @@ const todo = [
     task: 'Style Todoizt',
     completed: false
   }
-];
+]
 
 class App extends React.Component {
   state = {
@@ -49,6 +49,7 @@ class App extends React.Component {
       <div>
         <Header />
         <TodoForm handleAdd={this.handleAdd} handleClear={this.handleClear} />
+        <TodoList todo={this.state.todo} />
       </div>
     );
   }
