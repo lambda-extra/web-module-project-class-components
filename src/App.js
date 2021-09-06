@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 import Header from './components/Header';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
@@ -63,11 +64,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Grid
+        container
+        direction="column"
+        justifyContent="flex-start"
+        alignItems="center"
+      >
         <Header />
         <TodoForm handleAdd={this.handleAdd} handleClear={this.handleClear} />
         <TodoList todo={this.state.todo} handleToggleComplete={this.handleToggleComplete} />
-      </div>
+      </Grid>
     );
   }
 }
