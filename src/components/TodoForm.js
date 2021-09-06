@@ -8,8 +8,8 @@ class TodoForm extends React.Component {
     handleChanges = e => {
         this.setState({
             input: e.target.value
-        })
-    }
+        });
+    };
 
     handleAddClick = e => {
         e.preventDefault();
@@ -30,7 +30,7 @@ class TodoForm extends React.Component {
                     </div>
                     <div className="form-buttons">
                         <button onClick={this.handleAddClick}>Add</button>
-                        <button onClick={this.handleCLearClick}>Clear</button>
+                        <button onClick={this.handleClearClick}>Clear</button>
                     </div>
                 </form>
             </div>
