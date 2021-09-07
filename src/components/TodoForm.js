@@ -27,7 +27,7 @@ class TodoForm extends React.Component {
             <div className="todo-form">
                 <form>
                     <div className="form-options">
-                        <TextField id="outlined-basic" label="Enter task..." variant="outlined" size="small" fullWidth="true" onChange={this.handleChanges} />
+                        <TextField id="outlined-basic" label="Enter task..." variant="outlined" size="small" fullWidth={true} onChange={this.handleChanges} />
                         <Button onClick={this.handleAddClick}>Add</Button>
                         <Button onClick={this.handleClearClick}>Clear</Button>
                     </div>

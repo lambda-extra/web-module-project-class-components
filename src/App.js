@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import Header from './components/Header';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
@@ -8,12 +7,12 @@ import './styles.scss';
 const todo = [
   {
     id: 1,
-    task: 'Complete Todoizt MVP',
+    task: 'Complete manytasks',
     completed: false
   },
   {
     id: 2,
-    task: 'Style Todoizt',
+    task: 'Style manytasks',
     completed: false
   }
 ]
